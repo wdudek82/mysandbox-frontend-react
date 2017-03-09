@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Archive extends React.Component {
+class Archives extends React.Component {
    render(){
       console.log(this.props);
       console.log(this.props.location.query);
@@ -22,4 +22,4 @@ class Archive extends React.Component {
    }
 }
 
-export default Archive;
+export default Archives;

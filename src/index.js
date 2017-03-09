@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory} from 'react-router';
 
-import Archive from './components/Archive.component';
+import Archives from './components/Archives.component';
 import Featured from './components/Featured.component';
 import Layout from './components/Layout.component';
 import Settings from './components/Settings.component';
@@ -21,7 +21,7 @@ ReactDOM.render(
    <Router history={hashHistory}>
       <Route path="/" component={Layout}>
          <IndexRoute component={Featured}></IndexRoute>
-         <Route path="archive(/:article)" name="archive" component={Archive}></Route>
+         <Route path="archives(/:article)" name="archive" component={Archives}></Route>
          <Route path="settings" component={Settings}></Route>
       </Route>
    </Router>,

@@ -6,9 +6,12 @@ import Navbar from './Navbar.component';
 
 class Layout extends React.Component {
    render(){
+      const { location } = this.props;
+
+      console.log(this.props);
       return (
          <div>
-            <Navbar />
+            <Navbar location={location} />
             <Main />
          </div>
       );
