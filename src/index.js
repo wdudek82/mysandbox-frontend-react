@@ -14,16 +14,16 @@ import './css/index.css';
 
 // const archive = document.getElementById('archive');
 // const featured = document.getElementById('featured');
-const layout = document.getElementById('layout');
+const app = document.getElementById('app');
 // const settings = document.getElementById('settings');
 
 ReactDOM.render(
    <Router history={hashHistory}>
       <Route path="/" component={Layout}>
          <IndexRoute component={Featured}></IndexRoute>
-         <Route path="archive" component={Archive}></Route>
+         <Route path="archive(/:article)" name="archive" component={Archive}></Route>
          <Route path="settings" component={Settings}></Route>
       </Route>
    </Router>,
-   layout
+   app
 );
