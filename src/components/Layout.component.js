@@ -1,42 +1,27 @@
 import React from 'react';
-
-import Footer from './Footer.component';
-import Header from './Header.component';
+import { Link } from 'react-router';
 
 
 class Layout extends React.Component {
-   constructor(){
-      super();
-      this.state = {
-         name: 'Wojtek',
-         title: 'New title'
-      };
-   }
-
-   changeTitle(title){
-      this.setState({title});
+   navigate(){
+      console.log(this.props.router);
+      // also: pushState, replace, replaceState?
+      this.props.router.push('/');
    }
 
    render(){
-      setTimeout(() => {
-         this.setState({name: 'Neevor'});
-      }, 5000);
-
       return (
-         <div>
-            <Header
-               name={this.state.name}
-               title={this.state.title}
-               changeTitle={this.changeTitle.bind(this)}
-            />
-            <Header
-               name={'Wojtek'}
-               title={'Other title'}
-               changeTitle={this.changeTitle.bind(this)}
-            />
-            <h1>It's working! Hello {this.state.name}!</h1>
-            <Footer />
-         </div>
+        <div>
+           <h1>KillerNews.net</h1>
+           {this.props.children}
+           <Link to="archive">
+              <button className="btn btn-primary">archives</button>
+           </Link>&nbsp;
+           <Link to="settings">
+              <button className="btn btn-success">settings</button>
+           </Link>&nbsp;
+           <button onClick={this.navigate.bind(this)}>featured</button>
+        </div>
       );
    }
 }
