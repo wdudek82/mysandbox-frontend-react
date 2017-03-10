@@ -3,7 +3,7 @@ import React from 'react';
 import Header from './Header.component';
 import Pager from './Pager.component';
 import Post from './Post.component';
-import Sidebar from '../sidebar/Sidebar.component';
+import Sidebar from '../03_sidebar/Sidebar.component';
 
 
 class Main extends React.Component {

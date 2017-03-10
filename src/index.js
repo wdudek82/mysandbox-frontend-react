@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory} from 'react-router';
 
-import Archives from './components/Archives.component';
-import Featured from './components/00_learncode/Featured.component';
+import Archives from './components/00_learncode/Archives';
+import Featured from './components/00_learncode/Featured';
 import Layout from './components/Layout.component';
 import Settings from './components/00_learncode/Settings';
 

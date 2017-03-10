@@ -5,3 +5,17 @@ body {
   /*padding: 0;*/
   /*font-family: Lato, sans-serif;*/
 }
+
+#logo {
+  float: left;
+  background-color: #fff;
+  width: 30px;
+  border-radius: 50%;
+  margin-top: -7px;
+  margin-right: 5px;
+}
+
+.navbar-brand {
+  /*padding: auto;*/
+  /*margin-top: 12px;*/
+}

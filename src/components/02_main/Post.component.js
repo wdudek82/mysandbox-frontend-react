@@ -15,7 +15,7 @@ class Post extends React.Component {
                </a>
             </h2>
             <p className="lead">
-               by <a href="index.php">{this.props.author}</a>
+               by <a href="#">{this.props.author}</a>
             </p>
             <p>
                <span className="glyphicon glyphicon-time"></span> Posted on {this.props.datetime}

@@ -28,7 +28,12 @@ class Navbar extends React.Component {
                      <span className="icon-bar"></span>
                      <span className="icon-bar"></span>
                   </button>
-                  <a className="navbar-brand" href="#">LearnCode - ReactJS</a>
+                  <a className="navbar-brand" href="#">
+                     <img
+                        id="logo"
+                        src="https://cdn3.iconfinder.com/data/icons/cleaning-icons/512/Bucket_with_Soap-512.png"
+                     /> MySandbox
+                  </a>
                </div>
 
                <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
