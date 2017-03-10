@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Main from './Main.component';
-import Navbar from './Navbar.component';
+import Footer from './footer/Footer.component';
+import Main from './main/Main.component';
+import Navbar from './navbar/Navbar.component';
 
 
 class Layout extends React.Component {
@@ -13,6 +14,7 @@ class Layout extends React.Component {
          <div>
             <Navbar location={location} />
             <Main />
+            <Footer />
          </div>
       );
    }

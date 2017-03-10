@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, hashHistory} from 'react-router';
 
 import Archives from './components/Archives.component';
-import Featured from './components/Featured.component';
+import Featured from './components/00_learncode/Featured.component';
 import Layout from './components/Layout.component';
-import Settings from './components/Settings.component';
+import Settings from './components/00_learncode/Settings';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 import './css/bootstrap-home.css';
 import './css/index.css';
 

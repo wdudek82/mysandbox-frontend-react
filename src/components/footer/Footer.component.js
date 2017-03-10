@@ -4,10 +4,10 @@ import React from 'react';
 class Footer extends React.Component {
    render(){
       return (
-         <footer>
+         <footer className="container">
             <div className="row">
-               <div className="col-lg-12">
-                  <p>Copyright &copy; Your Website 2014</p>
+               <div className="col-md-8">
+                  <p>Copyright &copy; MySandbox 2017</p>
                </div>
             </div>
          </footer>
