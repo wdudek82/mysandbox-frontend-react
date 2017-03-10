@@ -6,9 +6,7 @@ class SideWidget extends React.Component {
       return (
          <aside className="well">
             <h4>{this.props.title}</h4>
-            <p>
-               {this.props.content}
-            </p>
+            {this.props.content}
          </aside>
       )
    }

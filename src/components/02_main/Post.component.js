@@ -8,24 +8,24 @@ class Post extends React.Component {
             <h2>
                <a href="#">{this.props.title}</a>&nbsp;
                <a href="#" title="edit">
-                  <i className="fa fa-pencil-square-o" aria-hidden="true"></i>
+                  <i className="fa fa-pencil-square-o" aria-hidden="true" />
                </a>&nbsp;
                <a href="#" title="delete">
-                  <i className="fa fa-trash-o" aria-hidden="true"></i>
+                  <i className="fa fa-trash-o" aria-hidden="true" />
                </a>
             </h2>
             <p className="lead">
                by <a href="#">{this.props.author}</a>
             </p>
             <p>
-               <span className="glyphicon glyphicon-time"></span> Posted on {this.props.datetime}
+               <span className="glyphicon glyphicon-time" /> Posted on {this.props.datetime}
             </p>
             <hr />
             <img className="img-responsive" src={this.props.image} alt="" />
             <hr />
             <p>{this.props.content}</p>
             <a className="btn btn-primary" href="#">
-               Read More <span className="glyphicon glyphicon-chevron-right"></span>
+               Read More <span className="glyphicon glyphicon-chevron-right" />
             </a>
             <hr />
          </div>
