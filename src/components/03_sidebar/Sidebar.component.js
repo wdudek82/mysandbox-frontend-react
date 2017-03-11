@@ -47,9 +47,9 @@ class Sidebar extends React.Component {
       const sideWidgets = [
          this.state.about,
          this.state.search,
-         this.state.categories,
          this.state.weather,
-         this.state.airPollution
+         this.state.airPollution,
+         this.state.categories,
       ].map((sideWidget, index) => (
          <SideWidget key={index} title={sideWidget.title} content={sideWidget.content} />
       ));
@@ -57,7 +57,6 @@ class Sidebar extends React.Component {
       return (
          <div className="col-md-4">
             {sideWidgets}
-            <SideWidget />
          </div>
       );
    }
